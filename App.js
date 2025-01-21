@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  SafeAreaView,
+} from 'react-native';
 
 export default function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -57,7 +63,9 @@ function HomeScreen({ onSignOut }) {
       </View>
       <View style={styles.progressContainer}>
         <Text style={styles.progressTitle}>Daily progress</Text>
-        <Text style={styles.progressText}>Here you can see your daily task</Text>
+        <Text style={styles.progressText}>
+          Here you can see your daily task
+        </Text>
         <View style={styles.progressBar}>
           <View style={styles.progressFill} />
         </View>
@@ -110,7 +118,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 16,
-    color: "#B0C4DE",
+    color: '#B0C4DE',
     marginBottom: 20,
   },
   button: {
