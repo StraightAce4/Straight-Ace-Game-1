@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  SafeAreaView,
-} from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native';
 
 export default function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -63,9 +57,7 @@ function HomeScreen({ onSignOut }) {
       </View>
       <View style={styles.progressContainer}>
         <Text style={styles.progressTitle}>Daily progress</Text>
-        <Text style={styles.progressText}>
-          Here you can see your daily task
-        </Text>
+        <Text style={styles.progressText}>Here you can see your daily task</Text>
         <View style={styles.progressBar}>
           <View style={styles.progressFill} />
         </View>
@@ -104,115 +96,116 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    padding: 18,
   },
   appName: {
-    fontSize: 36,
+    fontSize: 38,
     fontWeight: 'bold',
     color: '#D3D3D3',
-    marginBottom: 10,
+    marginBottom: 12,
   },
   tagline: {
-    fontSize: 18,
+    fontSize: 19,
     color: '#B0C4DE',
-    marginBottom: 20,
+    marginBottom: 22,
   },
   description: {
-    fontSize: 16,
-    color: '#B0C4DE',
-    marginBottom: 20,
+    fontSize: 17,
+    color: "#B0C4DE",
+    marginBottom: 22,
   },
   button: {
     backgroundColor: '#1E90FF',
-    padding: 15,
-    borderRadius: 5,
-    marginVertical: 10,
-    width: '80%',
+    padding: 18,
+    borderRadius: 9,
+    marginVertical: 12,
+    width: '82%',
     alignItems: 'center',
   },
   buttonText: {
     color: '#D3D3D3',
-    fontSize: 16,
+    fontSize: 17,
   },
   altButton: {
     backgroundColor: '#2F4F4F',
-    padding: 15,
-    borderRadius: 5,
-    marginVertical: 5,
-    width: '80%',
+    padding: 18,
+    borderRadius: 9,
+    marginVertical: 7,
+    width: '82%',
     alignItems: 'center',
   },
   altButtonText: {
     color: '#D3D3D3',
-    fontSize: 16,
+    fontSize: 17,
   },
   terms: {
-    fontSize: 12,
+    fontSize: 13,
     color: '#B0C4DE',
-    marginTop: 20,
-    width: '80%',
+    marginTop: 22,
+    width: '82%',
     textAlign: 'center',
   },
   homeContainer: {
     flex: 1,
-    padding: 20,
+    padding: 22,
     backgroundColor: '#000',
     width: '100%',
   },
   greeting: {
-    fontSize: 24,
+    fontSize: 25,
     color: '#D3D3D3',
-    marginBottom: 20,
+    marginBottom: 22,
     textAlign: 'center',
   },
   tabContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginBottom: 20,
+    marginBottom: 22,
   },
   activeTab: {
-    fontSize: 16,
+    fontSize: 17,
     color: '#1E90FF',
   },
   inactiveTab: {
-    fontSize: 16,
+    fontSize: 17,
     color: '#B0C4DE',
   },
   progressContainer: {
-    marginBottom: 20,
+    marginBottom: 22,
     width: '100%',
   },
   progressTitle: {
-    fontSize: 18,
+    fontSize: 19,
     color: '#D3D3D3',
-    marginBottom: 5,
+    marginBottom: 7,
   },
   progressText: {
-    fontSize: 14,
+    fontSize: 15,
     color: '#B0C4DE',
-    marginBottom: 10,
+    marginBottom: 12,
   },
   progressBar: {
-    height: 10,
+    height: 11,
     backgroundColor: '#2F4F4F',
-    borderRadius: 5,
+    borderRadius: 9,
     overflow: 'hidden',
   },
   progressFill: {
     width: '76%',
     height: '100%',
     backgroundColor: '#1E90FF',
-    borderRadius: 5,
+    borderRadius: 9,
   },
   progressPercentage: {
-    fontSize: 14,
+    fontSize: 15,
     color: '#D3D3D3',
-    marginTop: 5,
+    marginTop: 7,
     textAlign: 'center',
   },
   categoriesTitle: {
-    fontSize: 18,
+    fontSize: 19,
     color: '#D3D3D3',
-    marginBottom: 10,
+    marginBottom: 12,
   },
   categoriesContainer: {
     flexDirection: 'row',
@@ -221,40 +214,40 @@ const styles = StyleSheet.create({
   },
   categoryBox: {
     flex: 1,
-    padding: 10,
-    margin: 5,
-    borderRadius: 5,
-    minWidth: '40%',
+    padding: 12,
+    margin: 7,
+    borderRadius: 9,
+    minWidth: '45%',
     maxWidth: '45%',
     alignItems: 'center',
   },
   categoryTitle: {
-    fontSize: 16,
+    fontSize: 17,
     color: '#D3D3D3',
-    marginBottom: 5,
+    marginBottom: 7,
     textAlign: 'center',
   },
   categoryTasks: {
-    fontSize: 14,
+    fontSize: 15,
     color: '#D3D3D3',
-    marginBottom: 5,
+    marginBottom: 7,
     textAlign: 'center',
   },
   categoryDate: {
-    fontSize: 12,
+    fontSize: 13,
     color: '#B0C4DE',
     textAlign: 'center',
   },
   backButton: {
     backgroundColor: '#2F4F4F',
-    padding: 10,
-    borderRadius: 5,
-    marginVertical: 20,
+    padding: 14,
+    borderRadius: 9,
+    marginVertical: 22,
     width: '100%',
     alignItems: 'center',
   },
   backButtonText: {
     color: '#D3D3D3',
-    fontSize: 16,
+    fontSize: 17,
   },
 });
