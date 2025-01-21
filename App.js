@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     marginBottom: 0, 
   },
   tagline: {
-    fontSize: 10, 
+    fontSize: 12, 
     color: '#fff', 
     marginBottom: 40, 
   },
